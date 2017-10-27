@@ -1,0 +1,11 @@
+<%= form_for @movie do |f| %>
+
+    <%=f.label :title %>
+    <%=f.text_field :title %>
+
+    <%=f.label :summary %>
+    <%=f.text_field :summary %>
+
+    <%=f.submit %>
+
+<% end %>

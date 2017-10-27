@@ -1,0 +1,12 @@
+<% @movies.each do |m| %>
+
+    <%=link_to 'e', edit_movie_path(m)%> |
+    <%=link_to 'd', movie_path(m),
+    method: :delete,
+    data: { confirm: 'Are you sure?' } %> |
+    <%=m.title %> | 
+    <%=m.summary %> 
+    <br>
+<% end %>
+<br><br>
+<%= link_to 'New', new_movie_path %>
