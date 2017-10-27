@@ -1,5 +1,6 @@
 <% @movies.each do |m| %>
 
+    <%=link_to 's', movie_path(m)%> |
     <%=link_to 'e', edit_movie_path(m)%> |
     <%=link_to 'd', movie_path(m),
     method: :delete,
@@ -8,5 +9,12 @@
     <%=m.summary %> 
     <br>
 <% end %>
+
 <br><br>
-<%= link_to 'New', new_movie_path %>
+
+<%= link_to 'New', new_movie_path %> | 
+<% if current_user %>
+    <%=link_to 'Logout', logout_path%>
+<% else %>
+    <%=link_to 'Login', login_path%>
+<% end %>
