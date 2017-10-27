@@ -12,20 +12,22 @@
 ## Model
 
 **Movie**
-name:string
+```
+title:string
 summary:string
-rating:references
-comment:refferences
-
-**Rating**
-vote:integer
-user:references
-
-**Comment**
-comment:string
-user:references
+```
 
 **User**
+```
 email:string
 password:string
+````
+
+**Rating**
+```
+vote:integer   (1 up, 2 down)
+comment:string
+user:references
+movie:references
+```
 
