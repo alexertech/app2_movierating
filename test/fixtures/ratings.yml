@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vote: 1
+  comment: MyString
+  movie: one
+  user: one
+
+two:
+  vote: 1
+  comment: MyString
+  movie: two
+  user: two
