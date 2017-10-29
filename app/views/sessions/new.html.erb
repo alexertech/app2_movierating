@@ -1,0 +1,13 @@
+<%= form_tag login_path do%>
+
+    <%=label_tag :email %>
+    <%=text_field_tag :email %>
+
+    <%=label_tag :password %>
+    <%=password_field_tag :passwd %>
+
+    <%=submit_tag %>
+
+<% end %>
+
+<%= link_to 'back', movies_path %>
