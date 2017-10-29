@@ -43,8 +43,10 @@ gem 'jquery-rails'
 
 Now, using the marvel of rails,  we can quickly build the base of our project creating the CRUD’s with Scaffolding:
 
-`rails genereate scaffold Movie name:string summary:string`
-`rails generate scaffold User email:string passwd:string`
+```
+$ rails genereate scaffold Movie name:string summary:string
+$ rails generate scaffold User email:string passwd:string
+```
 
 This will do all the job for routing / model / controller and views.
 
@@ -231,9 +233,6 @@ Add a Login and Logout items to the application layout and go to test the applic
 
 Our current_user helper will be in charge of all the information related to the logged user.
 
-To wrap up, add this to the user_controller, so a non-registered user can’t do any actions on the users itself:
-
 `before_action :authorize`
 
-
-#rails-practice
+To wrap up, add this to the user_controller, so a non-registered user can’t do any actions on the users itself:
