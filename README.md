@@ -5,7 +5,8 @@
 - CRUD for movies and users
 - A user can login / logout 
 - Only a logged user can create / edit / delete movies
-- Non registered users only can see the movie listing.
+- Non registered users only can see the movie listing
+- Form for up / down vote and comment
 
 ## Model
 
@@ -236,3 +237,11 @@ Our current_user helper will be in charge of all the information related to the 
 `before_action :authorize`
 
 To wrap up, add this to the user_controller, so a non-registered user can’t do any actions on the users itself:
+
+# Password encryption
+
+See [app3 - job board](https://github.com/alexertech/app3_jobsboard), for how to apply BCRYPT to this scheme.
+
+# Up/Down vote and comment
+
+Work to do... someday :)
