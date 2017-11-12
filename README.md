@@ -242,6 +242,8 @@ To wrap up, add this to the user_controller, so a non-registered user can’t do
 
 See [app3 - job board](https://github.com/alexertech/app3_jobsboard), for how to apply BCRYPT to this scheme.
 
+Its easy once we get the session working. 
+
 # Up/Down vote and comment
 
 Work to do... someday :)
